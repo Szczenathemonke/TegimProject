@@ -6,3 +6,14 @@
   font-family: "Custom-1";
   src: url("/src/assets/fonts/AbhayaLibre-Regular.ttf");
 }
+
+@font-face {
+  font-family: "Custom-2";
+  src: url("/src/assets/fonts/AbhayaLibre-Bold.ttf");
+}
+@font-face {
+  font-family: "Custom-3";
+  font-weight: 400;
+
+  src: url("/src/assets/fonts/mundial/MundialRegular.otf") format("opentype");
+}
