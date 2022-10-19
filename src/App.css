@@ -3,17 +3,24 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Custom-1";
+  font-family: "AbhayaLibre-Regular";
   src: url("/src/assets/fonts/AbhayaLibre-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Custom-2";
+  font-family: "AbhayaLibre-Bold";
+  font-weight: 700;
   src: url("/src/assets/fonts/AbhayaLibre-Bold.ttf");
 }
 @font-face {
-  font-family: "Custom-3";
+  font-family: "Mundial-Regular";
   font-weight: 400;
 
   src: url("/src/assets/fonts/mundial/MundialRegular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Mundial-Light";
+  font-weight: 300;
+
+  src: url("/src/assets/fonts/mundial/MundialLight.otf") format("opentype");
 }

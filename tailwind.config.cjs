@@ -10,8 +10,9 @@ module.exports = {
           fontWeight: "700",
         },
       ],
+      "3xl": ["32px", "37,75px"],
       "2xl": ["24px", "36px"],
-      "2xl": [
+      xl: [
         "21px",
         {
           lineHeight: "34px",
@@ -21,9 +22,11 @@ module.exports = {
     },
     lineHeight: { 11: "4.5rem" },
     fontFamily: {
-      custom1: ["Custom-1", "sans-serif"],
-      custom2: ["Custom-2", "sans-serif"],
-      custom3: ["Custom-3", "sans-serif"],
+      sans: ["Mundial-Regular", "sans-serif"],
+      custom1: ["AbhayaLibre-Regular", "sans-serif"],
+      custom2: ["AbhayaLibre-Bold", "sans-serif"],
+      custom3: ["Mundial-Regular", "sans-serif"],
+      custom4: ["Mundial-Light", "sans-serif"],
       extend: {},
     },
   },
