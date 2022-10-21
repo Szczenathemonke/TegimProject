@@ -19,6 +19,8 @@ module.exports = {
           fontWeight: "400",
         },
       ],
+      lg: ["24px", "24px"],
+      xs: ["12px", "16px"],
     },
     lineHeight: { 11: "4.5rem" },
     fontFamily: {
@@ -27,7 +29,12 @@ module.exports = {
       custom2: ["AbhayaLibre-Bold", "sans-serif"],
       custom3: ["Mundial-Regular", "sans-serif"],
       custom4: ["Mundial-Light", "sans-serif"],
-      extend: {},
+      custom5: ["Mundial-DemiBold", "sans-serif"],
+      extend: {
+        content: {
+          pointer: 'url("/src/assets/navbar-pointer.svg")',
+        },
+      },
     },
   },
   daisyui: {

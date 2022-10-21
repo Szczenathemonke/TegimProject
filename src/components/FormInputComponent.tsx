@@ -13,7 +13,7 @@ function FormInputComponent({ label, ...props }: Props) {
         {label}
       </label>
       <input
-        className="input input-bordered rounded-none input-sm w-1/2 text-[#5b5b5b] placeholder-[#5b5b5b]"
+        className="input input-bordered rounded-none input-sm text-[#5b5b5b] placeholder-[#5b5b5b]"
         {...field}
         {...props}
       />

@@ -13,7 +13,7 @@ function FormInputComponent({ label, ...props }: Props) {
         {label}
       </label>
       <textarea
-        className="input text-left align top input-bordered rounded-none input-sm w-1/2 text-[#5b5b5b] placeholder-[#5b5b5b] min-h-[186px]"
+        className="input text-left align top input-bordered rounded-none input-sm text-[#5b5b5b] placeholder-[#5b5b5b] min-h-[186px]"
         {...field}
         {...props}
       />
