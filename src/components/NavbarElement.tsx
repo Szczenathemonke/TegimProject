@@ -4,8 +4,10 @@ function NavbarElement(navbarProps: { name: string; link: string }) {
   const [isFocused, setFocus] = useState(false);
   return (
     <li
-      className={`flex flex-row gap-2 ${
-        isFocused ? "before:content-[url('/src/assets/home-ico.svg')]" : ""
+      className={`flex flex-row gap-2 before:flex before:items-center ${
+        isFocused
+          ? "before:content-[url('/src/assets/navbar-pointer.svg')] "
+          : ""
       } `}
     >
       {/* {isFocused ? (

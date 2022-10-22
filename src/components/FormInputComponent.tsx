@@ -1,4 +1,4 @@
-import { FieldConfig, useField } from "formik";
+import { useField } from "formik";
 interface Props {
   label: string;
   name: string;
