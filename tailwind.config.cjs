@@ -3,6 +3,8 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   mode: 'jit',
   theme: {
+    extend: {
+    
     fontSize: {
       "5xl": [
         "64px",
@@ -31,12 +33,18 @@ module.exports = {
       custom3: ["Mundial-Regular", "sans-serif"],
       custom4: ["Mundial-Light", "sans-serif"],
       custom5: ["Mundial-DemiBold", "sans-serif"],
-      extend: {
+    },      
+    backgroundImage: {
+          section1: 'url("/src/assets/cardvector-1.svg")',
+          section2: 'url("/src/assets/cardvector-2.svg")',
+          section3: 'url("/src/assets/cardvector-3.svg")',
+          section4: 'url("/src/assets/cardvector-4.svg")',
+        },
         content: {
           pointer: 'url("/src/assets/navbar-pointer.svg")',
         },
       },
-    },
+    
   },
   daisyui: {
     themes: [

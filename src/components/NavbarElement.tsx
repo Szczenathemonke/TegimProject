@@ -4,11 +4,7 @@ function NavbarElement(navbarProps: { name: string; link: string }) {
   const [isFocused, setFocus] = useState(false);
   return (
     <li
-      className={`flex flex-row gap-2 before:flex before:items-center ${
-        isFocused
-          ? "before:content-[url('/src/assets/navbar-pointer.svg')] "
-          : ""
-      } `}
+      className={`flex flex-row gap-2 before:flex before:items-center active:before:content-[url('/src/assets/navbar-pointer.svg')] `}
     >
       {/* {isFocused ? (
         <img src="/src/assets/navbar-pointer.svg" alt="" />
@@ -28,3 +24,9 @@ function NavbarElement(navbarProps: { name: string; link: string }) {
 }
 
 export default NavbarElement;
+
+// ${
+//   isFocused
+//     ? "before:content-[url('/src/assets/navbar-pointer.svg')] "
+//     : ""
+// }
