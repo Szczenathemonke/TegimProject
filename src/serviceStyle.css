@@ -22,3 +22,13 @@
     width: 34px;
     height: 26px;
 }
+
+.navbarPointer::before {
+    content: " ";
+    display: flex;
+    align-items: center;
+    background-image: url("assets/navbar-pointer.svg");
+    width: 12px;
+    height: 1px;
+
+}
