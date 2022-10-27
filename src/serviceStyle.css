@@ -1,34 +1,24 @@
-.icon1::after{
-    content: " ";
-    background-image: url("assets/cardvector-1.svg");
-    width: 31px;
-    height: 26px;
+.icon1::after {
+  content: " ";
+  background-image: url("assets/cardvector-1.svg");
+  width: 31px;
+  height: 26px;
 }
-.icon2::after{
-    content: " ";
-    background-image: url("assets/cardvector-2.svg");
-    width: 31px;
-    height: 26px;
+.icon2::after {
+  content: " ";
+  background-image: url("assets/cardvector-2.svg");
+  width: 31px;
+  height: 26px;
 }
-.icon3::after{
-    content: " ";
-    background-image: url("assets/cardvector-3.svg");
-    width: 34px;
-    height: 26px;
+.icon3::after {
+  content: " ";
+  background-image: url("assets/cardvector-3.svg");
+  width: 34px;
+  height: 26px;
 }
-.icon4::after{
-    content: " ";
-    background-image: url("assets/cardvector-4.svg");
-    width: 34px;
-    height: 26px;
-}
-
-.navbarPointer::before {
-    content: " ";
-    display: flex;
-    align-items: center;
-    background-image: url("assets/navbar-pointer.svg");
-    width: 12px;
-    height: 1px;
-
+.icon4::after {
+  content: " ";
+  background-image: url("assets/cardvector-4.svg");
+  width: 34px;
+  height: 26px;
 }

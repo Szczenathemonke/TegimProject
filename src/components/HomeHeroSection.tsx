@@ -1,5 +1,5 @@
 import NavbarElement from "./NavbarElement";
-
+import "../serviceStyle.css";
 function HomeHeroSection() {
   return (
     <div>
@@ -32,11 +32,20 @@ function HomeHeroSection() {
                 Domy, mieszkania, działki na terenie Dolnego Śląska <br />
                 dopasowane do Ciebie
               </p>
-              <div className="flex flex-row gap-4">
-                <button className="btn px-16 pt-4 pb-3 h-[62px] bg-base-100 rounded-none font-custom3 text-xl text-primary border-white/90">
+              <div className="flex flex-row gap-4 justify-between">
+                <button
+                  className="btn px-16 pt-4 pb-3 h-[62px] bg-base-100 rounded-none 
+                font-custom3 text-xl text-primary border-white/90
+                hover:bg-[#ffffff] hover:text-base-100 hover:border-base-100 hover:border-solid
+                active:bg-base-100 active:text-primary active:border-[#ffffff] active:border-8 active:pb-4 active:pt-2 "
+                >
                   Zobacz Oferty
                 </button>
-                <button className="btn px-16 pt-4 pb-3 h-[62px] bg-secondary border-none rounded-none font-custom3 text-xl text-base-100">
+                <button
+                  className="btn px-16 pt-4 pb-3 h-[62px] bg-secondary border-none rounded-none
+                 font-custom3 text-xl text-base-100 
+                 hover:bg-base-100 hover:text-secondary hover:border-secondary hover:border-solid"
+                >
                   Napisz do Nas
                 </button>
               </div>

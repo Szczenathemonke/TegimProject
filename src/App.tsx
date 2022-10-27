@@ -7,12 +7,14 @@ import ServicesSection from "./components/ServicesSection";
 
 function App() {
   return (
-    <>
-      <HomeHeroSection />
-      <ServicesSection />
-      <ContactSection />
-      <FooterSection />
-    </>
+    <div className="flex flex-col justify-center items-center">
+      <div className="max-w-[1440px] drop-shadow-lg">
+        <HomeHeroSection />
+        <ServicesSection />
+        <ContactSection />
+        <FooterSection />
+      </div>
+    </div>
   );
 }
 

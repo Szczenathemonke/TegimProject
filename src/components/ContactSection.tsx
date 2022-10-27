@@ -87,7 +87,7 @@ function ContactSection() {
                     </div>
                     <button
                       type="submit"
-                      className="btn px-16 pt-4 pb-3 h-[43px] w-fit bg-base-100 rounded-none font-custom3 text-base text-primary border-white/90"
+                      className="btn px-16 pt-3 pb-3 h-[43px] w-fit bg-base-100 rounded-none font-custom3 text-base text-primary border-white/90"
                     >
                       {" "}
                       Wyślij
