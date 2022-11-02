@@ -26,3 +26,9 @@
 input:-webkit-autofill {
   background-color: black !important;
 }
+
+.heroImg {
+  background-image: url("./assets/hero-img.png");
+  width:593px;
+  height:878px;
+}
