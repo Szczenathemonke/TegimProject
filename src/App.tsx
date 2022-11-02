@@ -8,7 +8,7 @@ import ServicesSection from "./components/ServicesSection";
 function App() {
   return (
     <div className="flex flex-col justify-center items-center">
-      <div className="max-w-[1440px] drop-shadow-lg">
+      <div className="max-w-[1440px] shadow-md">
         <HomeHeroSection />
         <ServicesSection />
         <ContactSection />

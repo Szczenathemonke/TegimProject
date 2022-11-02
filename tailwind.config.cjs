@@ -4,6 +4,9 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      boxShadow: {
+        md: "0 0px 20px rgba(0, 0, 0, 0.6)",
+      },
       fontSize: {
         "5xl": [
           "64px",
@@ -56,7 +59,7 @@ module.exports = {
           "base-200": "#151515",
           info: "#a16207",
           success: "#84cc16",
-          warning: "#365314",
+          warning: "#FC4545",
           error: "#881337",
 
           "--btn-text-case": "capitalise",

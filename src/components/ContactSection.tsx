@@ -1,8 +1,12 @@
-import { Formik } from "formik";
+import { Formik, yupToFormErrors } from "formik";
 import FormInputComponent from "./FormInputComponent";
 import FormInputComponentLarge from "./FormInputComponentLarge";
+import * as Yup from "yup";
+import "../serviceStyle.css";
 
 function ContactSection() {
+  const phoneRegExp =
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   return (
     <div className="Container pt-[40px] pl-[100px]">
       <div className="flex flex-row justify-between">
@@ -37,7 +41,23 @@ function ContactSection() {
                 email: "",
                 phone: "",
                 msgContent: "",
+                termsOfCondition: false,
               }}
+              validationSchema={Yup.object({
+                nameAndSurname: Yup.string().required("Pole jest wymagane!"),
+                email: Yup.string()
+                  .email("Adres email jest niepoprawny, wpisz poprawny format.")
+                  .required("Pole jest Wymagane!"),
+                phone: Yup.string()
+                  .matches(
+                    phoneRegExp,
+                    "Numer Telefonu jest niepoprawny, wpisz poprawny format."
+                  )
+                  .min(9)
+                  .required("Pole jest Wymagane!"),
+                msgContent: Yup.string().required("Pole jest Wymagane!"),
+                termsOfCondition: Yup.boolean().oneOf([true], "* Wymagane!"),
+              })}
               onSubmit={(values) => alert(JSON.stringify(values))}
             >
               {(formikProps) => (
@@ -72,19 +92,37 @@ function ContactSection() {
                     />
                     <div className="flex gap-2 items-start ">
                       <input
+                        id="termsOfCondition"
                         type="checkbox"
                         className="checkbox checkbox-xs rounded-none"
+                        {...formikProps.getFieldProps("termsOfCondition")}
                       />
-                      <p className="text-xs text-[#909090]">
-                        Wyrażam zgodę na przetwarzanie moich danych osobowych
-                        dla potrzeb niezbędnych do realizacji procesu rekrutacji
-                        zgodnie z Rozporządzeniem Parlamentu Europejskiego i
-                        Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie
-                        ochrony osób fizycznych w związku z przetwarzaniem
-                        danych osobowych i w sprawie swobodnego przepływu takich
-                        danych oraz uchylenia dyrektywy 95/46/WE (RODO).
-                      </p>
+                      <div>
+                        <p
+                          className={`text-xs text-[#909090] ${
+                            formikProps.errors.termsOfCondition
+                              ? "text-warning"
+                              : ""
+                          }`}
+                        >
+                          Wyrażam zgodę na przetwarzanie moich danych osobowych
+                          dla potrzeb niezbędnych do realizacji procesu
+                          rekrutacji zgodnie z Rozporządzeniem Parlamentu
+                          Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia
+                          2016 r. w sprawie ochrony osób fizycznych w związku z
+                          przetwarzaniem danych osobowych i w sprawie swobodnego
+                          przepływu takich danych oraz uchylenia dyrektywy
+                          95/46/WE (RODO).
+                        </p>
+                        {formikProps.touched.termsOfCondition &&
+                        formikProps.errors.termsOfCondition ? (
+                          <div className="text-warning">
+                            {formikProps.errors.termsOfCondition}
+                          </div>
+                        ) : null}
+                      </div>
                     </div>
+
                     <button
                       type="submit"
                       className="btn px-16 pt-3 pb-3 h-[43px] w-fit bg-base-100 rounded-none font-custom3 text-base text-primary border-white/90"

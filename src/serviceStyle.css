@@ -22,3 +22,7 @@
   width: 34px;
   height: 26px;
 }
+
+input:-webkit-autofill {
+  background-color: black !important;
+}

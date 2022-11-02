@@ -6,7 +6,7 @@ console.log(cardVector1);
 
 function ServicesSection() {
   return (
-    <div className="Container pt-[40px] pl-[100px] ">
+    <div className="Container lg:pt-[40px] lg:pl-[100px] pl-[20px]">
       <div className="flex flex-col gap-8">
         <div className="flex flex-row items-center gap-4 ">
           <img src="src/assets/bulletpoint.svg" alt="" />

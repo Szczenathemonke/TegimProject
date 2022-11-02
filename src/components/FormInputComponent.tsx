@@ -1,4 +1,5 @@
 import { useField } from "formik";
+import "../serviceStyle.css";
 interface Props {
   label: string;
   name: string;
@@ -13,12 +14,14 @@ function FormInputComponent({ label, ...props }: Props) {
         {label}
       </label>
       <input
-        className="input input-bordered rounded-none input-sm text-[#5b5b5b] placeholder-[#5b5b5b]"
+        autoComplete="off"
+        className={`input input-bordered rounded-none input-sm text-[#5b5b5b] placeholder-[#5b5b5b]  
+        ${meta.error ? "border-warning placeholder-warning" : "border"}`}
         {...field}
         {...props}
       />
       {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div className="error text-warning">{meta.error}</div>
       ) : null}
     </div>
   );

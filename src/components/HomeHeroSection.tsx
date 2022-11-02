@@ -4,14 +4,14 @@ function HomeHeroSection() {
   return (
     <div>
       <div className="pt-[40px] pl-[100px]">
-        <img
+        {/* <img
           src="src/assets/foto-hero.png"
           className="absolute top-0 right-0"
         ></img>
         <img
           src="src/assets/Vector-hero.png"
           className="absolute right-[138px] top-[325px]  mix-blend-overlay "
-        ></img>
+        ></img> */}
         <div className="flex flex-row w-1/2 justify-between">
           <img src="src/assets/Group 1.png"></img>
           <ul className="flex flex-row gap-5 items-center">
@@ -23,6 +23,10 @@ function HomeHeroSection() {
         </div>
         <div className="hero min-h-full mt-[177px] mb-[200px] justify-start ">
           <div className="hero-content p-0 flex-col justify-start lg:flex-row-reverse">
+            <img
+              src="src/assets/hero-img.png"
+              className="absolute right-0 overflow-hidden"
+            ></img>
             <div>
               <h1 className="text-5xl mb-[22px] font-custom2 leading-11 font-bold">
                 Znajdźmy razem <br />
