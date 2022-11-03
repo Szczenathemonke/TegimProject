@@ -9,9 +9,9 @@ function ContactSection() {
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   return (
-    <div className="Container pt-[40px] pl-[100px]">
+    <div className="Container lg:pt-[40px] lg:pl-[100px] px-[20px]">
       <div className="flex flex-row justify-between">
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <div className="flex flex-row items-center gap-4 mb-[32px]">
             <img src={bulletPoint} alt="" />
             <h2 className="font-custom2 text-3xl">Kontakt</h2>
@@ -126,7 +126,7 @@ function ContactSection() {
 
                     <button
                       type="submit"
-                      className="btn px-16 pt-3 pb-3 h-[43px] w-fit bg-base-100 rounded-none font-custom3 text-base text-primary border-white/90"
+                      className="btn px-16 pt-3 pb-3 h-[43px] lg:w-fit bg-base-100 rounded-none font-custom3 text-base text-primary border-white/90"
                     >
                       {" "}
                       Wyślij
@@ -139,7 +139,7 @@ function ContactSection() {
         </div>
         <img
           src="src/assets/contact-bg-photo.png"
-          className="h-[800px] self-center"
+          className="hidden lg:block h-[800px] self-center"
           alt=""
         />
       </div>
