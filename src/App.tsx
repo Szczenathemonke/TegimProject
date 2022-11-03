@@ -6,7 +6,7 @@ import HomeHeroSection from "./components/HomeHeroSection";
 import Navbar from "./components/Navbar";
 import NavbarElement from "./components/NavbarElement";
 import ServicesSection from "./components/ServicesSection";
-import tegimLogo1 from "./assets/tegimLogo1.png";
+import tegimLogo1 from "./assets/TegimLogo1.png";
 
 function App() {
   return (
