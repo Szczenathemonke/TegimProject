@@ -29,6 +29,10 @@ input:-webkit-autofill {
 
 .heroImg {
   background-image: url("./assets/hero-img.png");
-  width:593px;
-  height:878px;
+  /* width: 837px;
+  height: 878px; */
+  margin-top: -49px;
+  margin-right: -245px;
+
+  /* margin-left: 240px; */
 }

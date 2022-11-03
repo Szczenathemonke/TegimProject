@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "../serviceStyle.css";
+import navbarPointer from "../assets/navbar-pointer.svg";
 
 function NavbarElement(navbarProps: { name: string; link: string }) {
   const [isFocused, setFocus] = useState(false);
   return (
     <li tabIndex={-1} className={`flex flex-row items-center gap-2  `}>
       {isFocused ? (
-        <img src="/src/assets/navbar-pointer.svg" alt="" />
+        <img src={navbarPointer} alt="" />
       ) : (
         <div className="w-[12px]"></div>
       )}

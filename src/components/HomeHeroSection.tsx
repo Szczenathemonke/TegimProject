@@ -4,33 +4,39 @@ import Navbar from "./Navbar";
 function HomeHeroSection() {
   return (
     <div>
-      <Navbar />
       <div className=" pl-[100px] ">
         <div className="flex min-h-full justify-start ">
-          <div className="flex p-0 flex-col w-screen justify-between lg:flex-row-reverse">
-            <div className="heroImg "></div>
+          <div className="flex p-0 mb-[40px] lg:mb-0 flex-row-reverse w-screen justify-between lg:flex-row-reverse overflow-hidden">
+            <div
+              className="heroImg 
+            lg:w-[837px] lg:h-[878px] lg:mt-[-49px] lg:mr-[-245px]
+            w-[247px] h-[260px] mt-[154px] mr-[-103px]"
+            ></div>
 
-            <div className="flex flex-col justify-center  min-w-[568px]">
-              <h1 className="text-5xl mb-[22px] font-custom2 leading-11 font-bold">
+            <div className="flex flex-col justify-center max-w-[218px] lg:max-w-[568px] gap-[24px]">
+              <h1
+                className="text-3xl lg:text-5xl 
+              mt-[84px] font-custom2 lg:leading-11 font-bold"
+              >
                 Znajdźmy razem <br />
                 Twój nowy Dom
               </h1>
-              <p className=" mb-[66px] font-custom-3 font-light text-2xl">
+              <p className=" lg:mb-[42px] font-custom-3 font-light text-base lg:text-2xl">
                 Domy, mieszkania, działki na terenie Dolnego Śląska <br />
                 dopasowane do Ciebie
               </p>
-              <div className="flex flex-row gap-4 justify-between">
+              <div className="flex flex-col lg:flex-row gap-4 justify-between">
                 <button
-                  className="btn px-16 pt-4 pb-3 h-[62px] bg-base-100 rounded-none 
-                font-custom3 text-xl text-primary border-white/90
+                  className="btn h-[62px] bg-base-100 rounded-none text-primary border-white/90
+                font-custom3 text-base lg:text-xl lg:px-16 lg:pt-4 lg:pb-3 
                 hover:bg-[#ffffff] hover:text-base-100 hover:border-base-100 hover:border-solid
                 active:bg-base-100 active:text-primary active:border-[#ffffff] active:border-8 active:pb-4 active:pt-2 "
                 >
                   Zobacz Oferty
                 </button>
                 <button
-                  className="btn px-16 pt-4 pb-3 h-[62px] bg-secondary border-none rounded-none
-                 font-custom3 text-xl text-base-100 
+                  className="btn h-[62px] bg-secondary border-none rounded-none
+                 font-custom3 text-base lg:text-xl lg:px-16 lg:pt-4 lg:pb-3  text-base-100 
                  hover:bg-base-100 hover:text-secondary hover:border-secondary hover:border-solid"
                 >
                   Napisz do Nas

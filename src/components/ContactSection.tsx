@@ -3,6 +3,7 @@ import FormInputComponent from "./FormInputComponent";
 import FormInputComponentLarge from "./FormInputComponentLarge";
 import * as Yup from "yup";
 import "../serviceStyle.css";
+import bulletPoint from "../assets/bulletpoint.svg";
 
 function ContactSection() {
   const phoneRegExp =
@@ -12,7 +13,7 @@ function ContactSection() {
       <div className="flex flex-row justify-between">
         <div className="w-1/2">
           <div className="flex flex-row items-center gap-4 mb-[32px]">
-            <img src="src/assets/bulletpoint.svg" alt="" />
+            <img src={bulletPoint} alt="" />
             <h2 className="font-custom2 text-3xl">Kontakt</h2>
           </div>
           <div className="flex flex-col gap-6 mb-[56px] ">
