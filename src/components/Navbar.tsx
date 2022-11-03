@@ -20,7 +20,7 @@ function Navbar() {
         }  gap-[234px] h-[64px] justify-start items-center 
   fixed top-0   z-10 pl-[100px]`}
       >
-        <img src="src/assets/Group 1.png" className="h-[24px]"></img>
+        <img src="/assets/Group 1.png" className="h-[24px]"></img>
         <ul className="flex flex-row gap-5 items-center">
           <NavbarElement name="Home" link="#" />
           <NavbarElement name="Usługi" link="#" />
