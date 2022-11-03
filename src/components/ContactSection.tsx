@@ -1,15 +1,17 @@
-import { Formik, yupToFormErrors } from "formik";
+import { Formik } from "formik";
 import FormInputComponent from "./FormInputComponent";
 import FormInputComponentLarge from "./FormInputComponentLarge";
 import * as Yup from "yup";
 import "../serviceStyle.css";
 import bulletPoint from "../assets/bulletpoint.svg";
+import contactIco from "../assets/contact-ico.svg";
+import msgIco from "../assets/msg-ico.svg";
 
 function ContactSection() {
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   return (
-    <div className="Container lg:pt-[40px] lg:pl-[100px] px-[20px]">
+    <div className="Container lg:pt-[40px] lg:pl-[100px] pl-[20px]">
       <div className="flex flex-row justify-between">
         <div className="lg:w-1/2">
           <div className="flex flex-row items-center gap-4 mb-[32px]">
@@ -18,7 +20,7 @@ function ContactSection() {
           </div>
           <div className="flex flex-col gap-6 mb-[56px] ">
             <div className="flex flex-row gap-2">
-              <img src="src/assets/contact-ico.svg" alt="" />
+              <img src={contactIco} alt="" />
               <h3 className="text-lg font-custom2">Zadzwoń do nas</h3>
             </div>
             <p className="font-custom4">
@@ -30,7 +32,7 @@ function ContactSection() {
           </div>
           <div>
             <div className="flex flex-row gap-2 mb-[24px]">
-              <img src="src/assets/msg-ico.svg" alt="" />
+              <img src={msgIco} alt="" />
               <h3 className="text-lg font-custom2">
                 Lub napisz do nas wiadomość
               </h3>

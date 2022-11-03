@@ -3,23 +3,24 @@ import ContactSection from "./components/ContactSection";
 import FooterSection from "./components/FooterSection";
 
 import HomeHeroSection from "./components/HomeHeroSection";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import NavbarElement from "./components/NavbarElement";
 import ServicesSection from "./components/ServicesSection";
 import tegimLogo1 from "./assets/tegimLogo1.png";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="drawer lg:flex lg:flex-col lg:justify-center lg:items-center">
+    <div className="drawer lg:justify-center lg:items-center ">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content max-w-[1440px] shadow-md">
+      <div className="drawer-content max-w-[1440px] shadow-md ">
         <Navbar />
         <HomeHeroSection />
         <ServicesSection />
         <ContactSection />
         <FooterSection />
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side shadow-md">
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <ul className="p-5 overflow-y-auto w-2/3 bg-base-100 text-base-content flex flex-col gap-6 lg:hidden">
           <li>

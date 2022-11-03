@@ -1,4 +1,4 @@
-import { FieldConfig, useField } from "formik";
+import { useField } from "formik";
 import "../serviceStyle.css";
 
 interface Props {
@@ -15,7 +15,8 @@ function FormInputComponent({ label, ...props }: Props) {
         {label}
       </label>
       <textarea
-        className={`input resize-none text-left align top input-bordered rounded-none input-sm text-[#5b5b5b] placeholder-[#5b5b5b] min-h-[186px] ${
+        className={`input resize-none text-left align top input-bordered rounded-none 
+        input-sm text-[#5b5b5b] placeholder-[#5b5b5b] min-h-[186px] ${
           meta.error ? "border-warning placeholder-warning" : "border"
         }`}
         {...field}

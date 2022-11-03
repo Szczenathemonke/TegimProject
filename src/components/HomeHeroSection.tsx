@@ -1,4 +1,5 @@
 import "../serviceStyle.css";
+import Navbar from "./Navbar";
 
 function HomeHeroSection() {
   return (
