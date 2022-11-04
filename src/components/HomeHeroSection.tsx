@@ -1,5 +1,4 @@
 import "../serviceStyle.css";
-import Navbar from "./Navbar";
 
 function HomeHeroSection() {
   return (
@@ -23,16 +22,16 @@ function HomeHeroSection() {
               </p>
               <div className="flex flex-col lg:flex-row gap-4 justify-between">
                 <button
-                  className="btn max-w-[153px] lg:max-w-[266px] h-[62px] bg-base-100 rounded-none text-primary border-white/90
-                font-custom3 text-base lg:text-xl lg:px-16 lg:pt-4 lg:pb-3 
+                  className="btn max-w-[153px] lg:min-w-[266px] h-[42px] lg:h-[62px] bg-base-100 rounded-none text-primary border-white/90
+                font-custom3 text-base lg:text-xl  lg:pt-4 lg:pb-3 
                 hover:bg-[#ffffff] hover:text-base-100 hover:border-base-100 hover:border-solid
                 active:bg-base-100 active:text-primary active:border-[#ffffff] active:border-8 active:pb-4 active:pt-2 "
                 >
                   Zobacz Oferty
                 </button>
                 <button
-                  className="btn max-w-[153px] lg:max-w-[266px] h-[62px] bg-secondary border-none rounded-none
-                 font-custom3 text-base lg:text-xl lg:px-16 lg:pt-4 lg:pb-3  text-base-100 
+                  className="btn max-w-[153px] lg:min-w-[265px] h-[42px] lg:h-[62px] bg-secondary border-none rounded-none
+                 font-custom3 text-base lg:text-xl  lg:pt-4 lg:pb-3  text-base-100 
                  hover:bg-base-100 hover:text-secondary hover:border-secondary hover:border-solid"
                 >
                   Napisz do Nas

@@ -27,6 +27,13 @@ input:-webkit-autofill {
   background-color: black !important;
 }
 
+.noScroll::-webkit-scrollbar {
+  width: 0 !important;
+}
+.noScroll {
+  overflow: -moz-scrollbars-none;
+}
+
 .heroImg {
   background-image: url("./assets/hero-img.png");
   width: 837px;
@@ -34,6 +41,7 @@ input:-webkit-autofill {
   margin-top: -49px;
   margin-right: -245px;
 }
+
 @media (max-width: 600px) {
   .heroImg {
     background-image: url("./assets/mobileHeroImg.png");

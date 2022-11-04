@@ -11,7 +11,7 @@ function ContactSection() {
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   return (
-    <div className="Container lg:pt-[40px] lg:pl-[100px] pl-[20px]">
+    <div className="Container lg:pt-[40px] lg:pl-[100px] px-[20px]">
       <div className="flex flex-row justify-between">
         <div className="lg:w-1/2">
           <div className="flex flex-row items-center gap-4 mb-[32px]">
@@ -46,6 +46,8 @@ function ContactSection() {
                 msgContent: "",
                 termsOfCondition: false,
               }}
+              validateOnChange={false}
+              validateOnBlur={false}
               validationSchema={Yup.object({
                 nameAndSurname: Yup.string().required("Pole jest wymagane!"),
                 email: Yup.string()

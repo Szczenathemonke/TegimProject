@@ -10,7 +10,7 @@ function ServicesSection() {
           <img src={bulletpoint} alt="" />
           <h2 className="font-custom2 text-3xl">Usługi</h2>
         </div>
-        <div className="flex flex-row gap-4 justify-between flex-wrap">
+        <div className="flex flex-row gap-4 justify-center lg:justify-between flex-wrap">
           <ServicesCard
             serviceName="Sprzedaż"
             serviceIco="icon1"

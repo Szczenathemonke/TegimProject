@@ -6,7 +6,7 @@ function FooterSection() {
         <div className="flex  flex-col lg:flex-row justify-between lg:items-center gap-6 lg:gap-0">
           <div className="flex flex-col lg:flex-row justify-center gap-4 items-start lg:items-center">
             <img src={tegimLogo2} className="h-[24px]"></img>
-            <p className="font-custom4 text-[#909090] text-xs leading-[13.37px] max-w-[239px]">
+            <p className="font-custom4 text-[#909090] text-xs leading-[13.37px] max-w-[239px] lg:max-w-[322px]">
               © 2022 Tegim Nieruchomości, wszystkie prawa zastrzeżone
             </p>
           </div>
