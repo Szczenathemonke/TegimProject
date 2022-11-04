@@ -131,7 +131,11 @@ function ContactSection() {
 
                     <button
                       type="submit"
-                      className="btn px-16 pt-3 pb-3 h-[43px] lg:w-fit bg-base-100 rounded-none font-custom3 text-base text-primary border-white/90"
+                      className="btn px-16 pt-3 pb-3 h-[42px] lg:w-fit 
+                      bg-base-100 rounded-none text-primary border-white/90
+                      font-custom3 text-base lg:text-xl lg:h-[62px] lg:pt-4 lg:pb-3 
+                    hover:bg-[#ffffff] hover:text-base-100 hover:border-base-100 hover:border-solid
+                      active:bg-base-100 active:text-primary active:border-[#ffffff] active:border-6  "
                     >
                       {" "}
                       Wyślij

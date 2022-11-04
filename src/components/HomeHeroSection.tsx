@@ -25,7 +25,7 @@ function HomeHeroSection() {
                   className="btn max-w-[153px] lg:min-w-[266px] h-[42px] lg:h-[62px] bg-base-100 rounded-none text-primary border-white/90
                 font-custom3 text-base lg:text-xl  lg:pt-4 lg:pb-3 
                 hover:bg-[#ffffff] hover:text-base-100 hover:border-base-100 hover:border-solid
-                active:bg-base-100 active:text-primary active:border-[#ffffff] active:border-8 active:pb-4 active:pt-2 "
+                active:bg-base-100 active:text-primary active:border-[#ffffff] active:border-6  "
                 >
                   Zobacz Oferty
                 </button>
