@@ -4,7 +4,10 @@ import "../serviceStyle.css";
 
 function ServicesSection() {
   return (
-    <div className="Container mb-[40px] lg:pt-[40px] lg:px-[100px] px-[20px]">
+    <div
+      id="services"
+      className="Container mb-[40px] lg:pt-[40px] lg:px-[100px] px-[20px]"
+    >
       <div className="flex flex-col gap-8">
         <div className="flex flex-row items-center gap-4 ">
           <img src={bulletpoint} alt="" />

@@ -2,7 +2,7 @@ import "../serviceStyle.css";
 
 function HomeHeroSection() {
   return (
-    <div>
+    <div id="home">
       <div className="lg:pl-[100px] pl-[20px]">
         <div className="flex min-h-full justify-start ">
           <div className="flex p-0 mb-[40px] lg:mb-0 flex-row-reverse w-screen justify-between lg:flex-row-reverse overflow-hidden">

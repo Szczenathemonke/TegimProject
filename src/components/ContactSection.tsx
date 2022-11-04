@@ -12,8 +12,11 @@ function ContactSection() {
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   return (
-    <div className="Container lg:pt-[40px] lg:pl-[100px] px-[20px]">
-      <div className="flex flex-row justify-between">
+    <div
+      id="contact"
+      className="Container lg:pt-[40px] lg:pl-[100px] px-[20px] md:pr-0"
+    >
+      <div className="flex flex-row justify-between mb-[120px]">
         <div className="lg:w-1/2">
           <div className="flex flex-row items-center gap-4 mb-[32px]">
             <img src={bulletPoint} alt="" />
@@ -70,7 +73,7 @@ function ContactSection() {
                 <>
                   <form
                     onSubmit={formikProps.handleSubmit}
-                    className="flex flex-col gap-6 mb-[120px]"
+                    className="flex flex-col gap-6 "
                   >
                     <FormInputComponent
                       name="nameAndSurname"

@@ -31,10 +31,10 @@ function Navbar() {
       >
         <img src={tegimLogo1} className="h-[24px]"></img>
         <ul className="flex flex-row gap-5 items-center">
-          <NavbarElement name="Home" link="#" />
-          <NavbarElement name="Usługi" link="#" />
+          <NavbarElement name="Home" link="home" />
+          <NavbarElement name="Usługi" link="services" />
           <NavbarElement name="oferty" link="#" />
-          <NavbarElement name="kontakt" link="#" />
+          <NavbarElement name="kontakt" link="contact" />
         </ul>
       </div>
     </>

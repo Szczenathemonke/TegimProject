@@ -12,10 +12,16 @@ function NavbarElement(navbarProps: { name: string; link: string }) {
         <div className="w-[12px]"></div>
       )}
       <a
-        href={navbarProps.link}
+        href="/"
         className="text-base text-[#909090] hover:text-[#ffffff] focus:text-[#ffffff] uppercase tracking-widest "
         onBlur={() => setFocus(false)}
         onFocus={() => setFocus(true)}
+        onClick={(e) => {
+          let navelement = document.getElementById(`${navbarProps.link}`);
+          e.preventDefault();
+          navelement &&
+            navelement.scrollIntoView({ behavior: "smooth", block: "center" });
+        }}
       >
         {navbarProps.name}
       </a>
