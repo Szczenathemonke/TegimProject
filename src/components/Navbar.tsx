@@ -26,10 +26,8 @@ function Navbar() {
         </label>
       </div>
       <div
-        className={`flex-none hidden lg:flex lg:flex-row ${
-          navbarChange ? "w-screen bg-base-100 shadow-md" : ""
-        }  gap-[234px] h-[64px] justify-start items-center 
-  fixed top-0 z-10 pl-[100px]`}
+        className={`flex-none hidden lg:flex lg:flex-row  w-screen bg-base-100 shadow-md   gap-[234px] h-[64px] justify-start items-center 
+  sticky top-0 z-10 pl-[100px]`}
       >
         <img src={tegimLogo1} className="h-[24px]"></img>
         <ul className="flex flex-row gap-5 items-center">
@@ -44,3 +42,7 @@ function Navbar() {
 }
 
 export default Navbar;
+
+// ${
+//   navbarChange ? "w-screen bg-base-100 shadow-md" : ""
+// }
