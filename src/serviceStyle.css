@@ -30,9 +30,9 @@ input:-webkit-autofill {
 .noScroll::-webkit-scrollbar {
   width: 0 !important;
 }
-.noScroll {
+/* .noScroll {
   overflow: -moz-scrollbars-none;
-}
+} */
 
 .heroImg {
   background-image: url("./assets/hero-img.png");

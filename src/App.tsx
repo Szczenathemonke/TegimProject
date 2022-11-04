@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="drawer lg:justify-center lg:items-center ">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content max-w-[1440px] shadow-md  noScroll">
+      <div className="drawer-content max-w-[1440px] shadow-md overflow-x-hidden noScroll">
         <Navbar />
         <HomeHeroSection />
         <ServicesSection />
@@ -30,7 +30,7 @@ function App() {
           <NavbarElement name="Home" link="#" />
           <NavbarElement name="Usługi" link="#" />
           <NavbarElement name="oferty" link="#" />
-          <NavbarElement name="kontakt" link="#" />
+          <NavbarElement name="kontakt" link="#ContactSection" />
         </ul>
       </div>
     </div>
