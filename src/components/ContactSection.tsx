@@ -6,6 +6,7 @@ import "../serviceStyle.css";
 import bulletPoint from "../assets/bulletpoint.svg";
 import contactIco from "../assets/contact-ico.svg";
 import msgIco from "../assets/msg-ico.svg";
+import contactBgPhoto from "../assets/contact-bg-photo.png";
 
 function ContactSection() {
   const phoneRegExp =
@@ -142,7 +143,7 @@ function ContactSection() {
           </div>
         </div>
         <img
-          src="src/assets/contact-bg-photo.png"
+          src={contactBgPhoto}
           className="hidden lg:block h-[800px] self-center"
           alt=""
         />

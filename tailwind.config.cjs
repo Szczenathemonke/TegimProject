@@ -15,7 +15,7 @@ module.exports = {
             fontWeight: "700",
           },
         ],
-        "3xl": ["32px", "37,75px"],
+        "3xl": ["32px", "37.75px"],
         "2xl": ["24px", "36px"],
         xl: [
           "21px",
