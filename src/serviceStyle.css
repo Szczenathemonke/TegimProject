@@ -31,7 +31,7 @@ input:-webkit-autofill {
   width: 0 !important;
 }
 .noScroll {
-  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
 }
 
 .heroImg {
