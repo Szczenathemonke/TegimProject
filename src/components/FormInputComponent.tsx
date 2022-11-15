@@ -9,13 +9,13 @@ interface Props {
 function FormInputComponent({ label, ...props }: Props) {
   const [field, meta] = useField(props);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-2 ">
       <label htmlFor="nameAndSurname" className="font-custom4 text-base">
         {label}
       </label>
       <input
         autoComplete="off"
-        className={`input input-bordered rounded-none input-sm text-[#5b5b5b] placeholder-[#5b5b5b]  
+        className={`input input-bordered rounded-none input-sm text-[#FFFFFF]/90 placeholder-[#5b5b5b]  
         ${meta.error ? "border-warning placeholder-warning" : "border"}`}
         {...field}
         {...props}

@@ -21,6 +21,10 @@ function NavbarElement(navbarProps: { name: string; link: string }) {
           e.preventDefault();
           navelement &&
             navelement.scrollIntoView({ behavior: "smooth", block: "center" });
+
+          // if (closeOffCanvas?.checked){
+          //   closeOffCanvas.checked = false;
+          // }
         }}
       >
         {navbarProps.name}

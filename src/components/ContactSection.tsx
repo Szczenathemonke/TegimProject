@@ -6,7 +6,8 @@ import "../serviceStyle.css";
 import bulletPoint from "../assets/bulletpoint.svg";
 import contactIco from "../assets/contact-ico.svg";
 import msgIco from "../assets/msg-ico.svg";
-import contactBgPhoto from "../assets/contact-bg-photo.png";
+// import contactBgPhoto from "../assets/contact-bg-photo.png";
+import contactBgPhoto from "../assets/contact-img.png";
 
 function ContactSection() {
   const phoneRegExp =
@@ -14,10 +15,10 @@ function ContactSection() {
   return (
     <div
       id="contact"
-      className="Container lg:pt-[40px] lg:pl-[100px] px-[20px] md:pr-0"
+      className="Container  lg:w-[1790px] lg:pt-[40px] lg:pl-[100px] px-[20px] md:pr-0"
     >
       <div className="flex flex-row justify-between mb-[120px]">
-        <div className="lg:w-1/2">
+        <div className="min-w-[320px] w-1/2 lg:max-w-[800px]">
           <div className="flex flex-row items-center gap-4 mb-[32px]">
             <img src={bulletPoint} alt="" />
             <h2 className="font-custom2 text-3xl">Kontakt</h2>
@@ -78,19 +79,19 @@ function ContactSection() {
                     <FormInputComponent
                       name="nameAndSurname"
                       type="text"
-                      label="Imię i Nazwisko"
+                      label="Imię i Nazwisko *"
                       placeholder="Wpisz imię i nazwisko"
                     />
                     <FormInputComponent
                       name="email"
                       type="text"
-                      label="Adres E-mail"
+                      label="Adres E-mail *"
                       placeholder="Wpisz swój adres e-mail"
                     />
                     <FormInputComponent
                       name="phone"
                       type="text"
-                      label="Numer Telefonu"
+                      label="Numer Telefonu *"
                       placeholder="Wpisz numer telefonu"
                     />
                     <FormInputComponentLarge
@@ -149,11 +150,13 @@ function ContactSection() {
             </Formik>
           </div>
         </div>
-        <img
-          src={contactBgPhoto}
-          className="hidden lg:block h-[800px] self-center"
-          alt=""
-        />
+        <div>
+          <img
+            src={contactBgPhoto}
+            className="hidden lg:block h-[800px] self-center"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
