@@ -10,7 +10,7 @@ function ServicesCard({
   serviceContent,
 }: ServiceProp) {
   return (
-    <div className="card w-[298px] rounded-none shadow-[0_5px_5px_6px_rgba(20,20,20,0.6)]">
+    <div className="card min-w-[250px] max-w-[298px] rounded-none shadow-[0_5px_5px_6px_rgba(20,20,20,0.6)]">
       <div className="card-body px-6 ">
         <div className="flex flex-row gap-12-px ">
           <h2 className={`card-title font-custom2 text-2xl ${serviceIco}`}>

@@ -3,10 +3,13 @@ import heroImg from "../assets/hero-img.png";
 
 function HomeHeroSection() {
   return (
-    <div id="home" className="flex justify-center lg:justify-start">
-      <div className="w-[360px] lg:w-[1685px] lg:mt-[-49px] lg:pl-[100px] pl-[20px]">
+    <div
+      id="home"
+      className="flex justify-center lg:justify-start 2xl:justify-center"
+    >
+      <div className="min-w-[360px] lg:max-w-[1685px] lg:mt-[-49px] lg:pl-[100px] pl-[20px]">
         <div className="flex  justify-start  ">
-          <div className="flex p-0 mb-[40px] lg:gap-[180px] lg:mb-0 flex-row-reverse justify-between lg:flex-row-reverse ">
+          <div className="flex p-0 mb-[40px] sm:gap-[100px] lg:gap-[180px] lg:mb-0 flex-row-reverse justify-between lg:flex-row-reverse ">
             <div className="flex w-[247px] ml-[-22px] lg:w-[837px] ">
               <img
                 src={heroImg}

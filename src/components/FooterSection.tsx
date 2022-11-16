@@ -1,7 +1,7 @@
 import tegimLogo2 from "../assets/tegimLogo2.svg";
 function FooterSection() {
   return (
-    <footer className="min-h-[84px] bg-base-200 lg:px-[100px] lg:py-[30px] pt-7 pb-[22px] px-5 ">
+    <footer className="flex justify-center min-h-[84px] bg-base-200 lg:px-[100px] lg:py-[30px] pt-7 pb-[22px] px-5 ">
       <div className="container ">
         <div className="flex  flex-col lg:flex-row justify-between lg:items-center gap-6 lg:gap-0">
           <div className="flex flex-col lg:flex-row justify-center gap-4 items-start lg:items-center">
