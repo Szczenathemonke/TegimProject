@@ -7,7 +7,7 @@ function HomeHeroSection() {
       id="home"
       className="flex justify-center lg:justify-start 2xl:justify-center"
     >
-      <div className="min-w-[360px] lg:max-w-[1685px] lg:mt-[-49px] lg:pl-[100px] pl-[20px]">
+      <div className="min-w-[360px] lg:max-w-[1685px] mt-[64px] lg:mt-[-49px] lg:pl-[100px] pl-[20px]">
         <div className="flex  justify-start  ">
           <div className="flex p-0 mb-[40px] sm:gap-[100px] lg:gap-[180px] lg:mb-0 flex-row-reverse justify-between lg:flex-row-reverse ">
             <div className="flex w-[247px] ml-[-22px] lg:w-[837px] ">
@@ -42,7 +42,7 @@ function HomeHeroSection() {
                 <button
                   className="btn max-w-[153px] lg:min-w-[266px] h-[42px] lg:h-[62px] bg-secondary border-none rounded-none
                  font-custom3 text-base lg:text-xl  justify-center  text-base-100 
-                 hover:bg-base-100 hover:text-secondary hover:border-secondary hover:border-solid active:text-xl active:font-custom3"
+                 hover:bg-base-100 hover:text-secondary hover:border-secondary hover:border-solid active:lg:text-xl active:font-custom3"
                 >
                   Napisz do Nas
                 </button>
