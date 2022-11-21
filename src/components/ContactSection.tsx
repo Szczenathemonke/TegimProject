@@ -13,7 +13,7 @@ function ContactSection() {
   const phoneRegExp =
     /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   return (
-    <div id="contact" className="2xl:flex 2xl:justify-center">
+    <div id="contact" className="2xl:flex 2xl:justify-center scroll-mt-16">
       <div className="Container flex max-w-[1690px] w-fit 2xl:w-screen justify-center  lg:pt-[40px]  px-[20px] lg:px-0">
         <div className="flex flex-row items-center justify-between mb-[120px] w-[1690px] pl-[0px] md:pl-[85px] lg:pl-[100px] gap-16">
           <div className="max-w-[320px]  w-full sm:max-w-[550px] lg:max-w-[800px]">
@@ -22,7 +22,7 @@ function ContactSection() {
               <h2 className="font-custom2 text-3xl">Kontakt</h2>
             </div>
             <div className="flex flex-col gap-6 mb-[56px] ">
-              <div className="flex flex-row gap-2">
+              <div id="contactSnap" className="flex flex-row gap-2">
                 <img src={contactIco} alt="" />
                 <h3 className="text-lg font-custom2">Zadzwoń do nas</h3>
               </div>
@@ -34,7 +34,7 @@ function ContactSection() {
               <h4 className="font-custom5">+48 606 391 959</h4>{" "}
             </div>
             <div>
-              <div id="contactSnap" className="flex flex-row gap-2 mb-[24px]">
+              <div className="flex flex-row gap-2 mb-[24px]">
                 <img src={msgIco} alt="" />
                 <h3 className="text-lg font-custom2">
                   Lub napisz do nas wiadomość

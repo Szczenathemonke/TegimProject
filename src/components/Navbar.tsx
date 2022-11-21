@@ -33,9 +33,9 @@ function Navbar() {
         <img src={tegimLogo1} className="h-[24px]"></img>
         <ul className="flex flex-row gap-5 items-center">
           <NavbarElement name="Home" link="home" />
-          <NavbarElement name="Usługi" link="servicesSnap" />
+          <NavbarElement name="Usługi" link="services" />
           <NavbarElement name="oferty" link="#" />
-          <NavbarElement name="kontakt" link="contactSnap" />
+          <NavbarElement name="kontakt" link="contact" />
         </ul>
       </div>
     </>

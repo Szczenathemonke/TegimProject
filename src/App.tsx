@@ -29,9 +29,9 @@ function App() {
             </li>
 
             <NavbarElement name="Home" link="home" />
-            <NavbarElement name="Usługi" link="servicesSnapMobile" />
+            <NavbarElement name="Usługi" link="services" />
             <NavbarElement name="oferty" link="#" />
-            <NavbarElement name="kontakt" link="contactSnap" />
+            <NavbarElement name="kontakt" link="contact" />
           </ul>
         </div>
       </div>

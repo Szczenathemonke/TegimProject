@@ -20,7 +20,7 @@ function NavbarElement(navbarProps: { name: string; link: string }) {
           let navElement = document.getElementById(`${navbarProps.link}`);
           e.preventDefault();
           navElement &&
-            navElement.scrollIntoView({ behavior: "smooth", block: "center" });
+            navElement.scrollIntoView({ behavior: "smooth", block: "start" });
           let offCanvas = document.getElementById("offCanvas");
 
           if (window.innerWidth < 1024) {
