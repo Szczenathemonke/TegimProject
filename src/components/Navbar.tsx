@@ -16,25 +16,26 @@ function Navbar() {
 
   window.addEventListener("scroll", scrollChange, true);
   console.log(window.scrollY);
-
   return (
     <>
-      <div className="flex h-[64px] px-[20px] justify-between items-center lg:hidden bg-base-100 w-screen sticky top-0 z-10">
+      <div className=" flex h-[64px] px-[20px] justify-between items-center lg:hidden bg-base-100 w-screen fixed top-0 z-20 ">
         <img src={tegimLogo1} className="h-[24px]"></img>
-        <label htmlFor="my-drawer" className=" drawer-button">
+        <label htmlFor="offCanvas" className=" drawer-button">
           <img src={toggler} alt="menu" />
         </label>
       </div>
       <div
-        className={`flex-none hidden lg:flex lg:flex-row  w-screen bg-base-100 shadow-md   gap-[234px] h-[64px] justify-start items-center 
-  sticky top-0 z-10 pl-[100px]`}
+        className={`flex-none hidden lg:flex lg:flex-row   gap-[234px] h-[64px] justify-start items-center 
+  fixed top-0 z-20 pl-[100px] min-[2000px]:pl-[550px] ${
+    navbarChange ? "w-screen bg-base-100 shadow-md" : ""
+  }`}
       >
         <img src={tegimLogo1} className="h-[24px]"></img>
         <ul className="flex flex-row gap-5 items-center">
           <NavbarElement name="Home" link="home" />
-          <NavbarElement name="Usługi" link="services" />
+          <NavbarElement name="Usługi" link="servicesSnap" />
           <NavbarElement name="oferty" link="#" />
-          <NavbarElement name="kontakt" link="contact" />
+          <NavbarElement name="kontakt" link="contactSnap" />
         </ul>
       </div>
     </>

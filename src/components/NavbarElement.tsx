@@ -17,10 +17,15 @@ function NavbarElement(navbarProps: { name: string; link: string }) {
         onBlur={() => setFocus(false)}
         onFocus={() => setFocus(true)}
         onClick={(e) => {
-          let navelement = document.getElementById(`${navbarProps.link}`);
+          let navElement = document.getElementById(`${navbarProps.link}`);
           e.preventDefault();
-          navelement &&
-            navelement.scrollIntoView({ behavior: "smooth", block: "center" });
+          navElement &&
+            navElement.scrollIntoView({ behavior: "smooth", block: "center" });
+          let offCanvas = document.getElementById("offCanvas");
+
+          if (window.innerWidth < 1024) {
+            offCanvas?.click();
+          }
         }}
       >
         {navbarProps.name}

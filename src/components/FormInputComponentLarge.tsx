@@ -10,7 +10,7 @@ interface Props {
 function FormInputComponent({ label, ...props }: Props) {
   const [field, meta] = useField(props);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-2">
       <label htmlFor="nameAndSurname" className="font-custom4 text-base">
         {label}
       </label>
