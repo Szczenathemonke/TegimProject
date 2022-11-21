@@ -22,7 +22,7 @@ function ContactSection() {
               <h2 className="font-custom2 text-3xl">Kontakt</h2>
             </div>
             <div className="flex flex-col gap-6 mb-[56px] ">
-              <div id="contactSnap" className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2">
                 <img src={contactIco} alt="" />
                 <h3 className="text-lg font-custom2">Zadzwoń do nas</h3>
               </div>
