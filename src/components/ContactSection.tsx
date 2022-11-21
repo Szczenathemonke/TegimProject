@@ -34,7 +34,7 @@ function ContactSection() {
               <h4 className="font-custom5">+48 606 391 959</h4>{" "}
             </div>
             <div>
-              <div className="flex flex-row gap-2 mb-[24px]">
+              <div id="contactSnap" className="flex flex-row gap-2 mb-[24px]">
                 <img src={msgIco} alt="" />
                 <h3 className="text-lg font-custom2">
                   Lub napisz do nas wiadomość
