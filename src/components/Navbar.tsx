@@ -7,7 +7,7 @@ function Navbar() {
   const [navbarChange, setChange] = useState(false);
 
   const scrollChange = () => {
-    if (window.pageYOffset >= 80) {
+    if (window.pageYOffset >= 100) {
       setChange(true);
     } else {
       setChange(false);
@@ -25,12 +25,15 @@ function Navbar() {
         </label>
       </div>
       <div
-        className={`flex-none hidden lg:flex lg:flex-row   gap-[234px] h-[64px] justify-start items-center 
+        className={`flex-none hidden lg:flex lg:flex-row   gap-[234px]  justify-start items-center 
   fixed top-0 z-20 pl-[100px] min-[2000px]:pl-[550px] ${
-    navbarChange ? "w-screen bg-base-100 shadow-md" : ""
+    navbarChange ? "w-screen bg-base-100 shadow-md h-[64px]" : "h-[123px]"
   }`}
       >
-        <img src={tegimLogo1} className="h-[24px]"></img>
+        <img
+          src={tegimLogo1}
+          className={`${navbarChange ? "h-[24px]" : "h-[43px]"}`}
+        ></img>
         <ul className="flex flex-row gap-5 items-center">
           <NavbarElement name="Home" link="home" />
           <NavbarElement name="Usługi" link="services" />

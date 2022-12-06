@@ -19,7 +19,6 @@ function App() {
           <HomeHeroSection />
           <ServicesSection />
           <ContactSection />
-          <FooterSection />
         </div>
         <div className="drawer-side  h-full">
           <label htmlFor="offCanvas" className="drawer-overlay"></label>
@@ -35,6 +34,7 @@ function App() {
           </ul>
         </div>
       </div>
+      <FooterSection />
     </div>
   );
 }
