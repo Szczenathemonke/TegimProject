@@ -21,7 +21,10 @@ function App() {
           <ContactSection />
         </div>
         <div className="drawer-side  h-full">
-          <label htmlFor="offCanvas" className="drawer-overlay"></label>
+          <label
+            htmlFor="offCanvas"
+            className="drawer-overlay checked:bg-opacity-0  "
+          ></label>
           <ul className="p-5 overflow-y-auto w-2/3 bg-base-100 text-base-content flex flex-col gap-6 lg:hidden">
             <li>
               <img src={tegimLogo1} className="h-[24px] mb-[28px]"></img>
