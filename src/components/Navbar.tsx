@@ -18,7 +18,11 @@ function Navbar() {
   console.log(window.scrollY);
   return (
     <>
-      <div className=" flex h-[64px] px-[20px] justify-between items-center lg:hidden bg-base-100 w-screen fixed top-0 z-20 ">
+      <div
+        className={` flex h-[64px] px-[20px] justify-between items-center lg:hidden bg-base-100 w-screen fixed top-0 z-20 ${
+          navbarChange ? "shadow-md" : ""
+        }`}
+      >
         <img src={tegimLogo1} className="h-[24px]"></img>
         <label htmlFor="offCanvas" className=" drawer-button">
           <img src={toggler} alt="menu" />
@@ -26,7 +30,7 @@ function Navbar() {
       </div>
       <div
         className={`flex-none hidden lg:flex lg:flex-row   gap-[234px]  justify-start items-center 
-  fixed top-0 z-20 pl-[100px] min-[2000px]:pl-[550px] ${
+  fixed top-0 z-20 pl-[100px] 2xl:pl-[550px] ${
     navbarChange ? "w-screen bg-base-100 shadow-md h-[64px]" : "h-[123px]"
   }`}
       >

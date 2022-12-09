@@ -12,15 +12,15 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="App ">
-      <div className="drawer lg:justify-center lg:items-center lg:h-auto overflow-x-hidden noScroll">
+      <Navbar />
+      <div className="drawer lg:justify-center lg:items-center h-auto overflow-x-hidden noScroll">
         <input id="offCanvas" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content overflow-x-hidden noScroll ">
-          <Navbar />
           <HomeHeroSection />
           <ServicesSection />
           <ContactSection />
         </div>
-        <div className="drawer-side  h-full">
+        <div className="drawer-side  h-full ">
           <label
             htmlFor="offCanvas"
             className="drawer-overlay checked:bg-opacity-0  "
