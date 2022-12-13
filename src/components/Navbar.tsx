@@ -28,10 +28,11 @@ function Navbar() {
           <img src={toggler} alt="menu" />
         </label>
       </div>
+
       <div
-        className={`flex-none hidden lg:flex lg:flex-row   gap-[234px]  justify-start items-center 
-  fixed top-0 z-20 pl-[100px] 2xl:pl-[550px] ${
-    navbarChange ? "w-screen bg-base-100 shadow-md h-[64px]" : "h-[123px]"
+        className={`flex-none hidden lg:flex   lg:flex-row   gap-[234px]  justify-start items-center 
+  fixed top-0 z-20 pl-[100px]  ${
+    navbarChange ? "w-screen bg-base-100  h-[64px]" : "h-[123px]"
   }`}
       >
         <img

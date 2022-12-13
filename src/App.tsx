@@ -8,14 +8,16 @@ import NavbarElement from "./components/NavbarElement";
 import ServicesSection from "./components/ServicesSection";
 import tegimLogo1 from "./assets/tegimLogo1.png";
 import Navbar from "./components/Navbar";
+import NavbarBgAfterScroll from "./components/NavbarBgAfterScroll";
 
 function App() {
   return (
     <div className="App ">
-      <Navbar />
+      <NavbarBgAfterScroll />
       <div className="drawer lg:justify-center lg:items-center h-auto overflow-x-hidden noScroll">
         <input id="offCanvas" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content overflow-x-hidden noScroll ">
+          <Navbar />
           <HomeHeroSection />
           <ServicesSection />
           <ContactSection />
