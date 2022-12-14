@@ -1,7 +1,4 @@
 import { useState } from "react";
-import NavbarElement from "./NavbarElement";
-import tegimLogo1 from "../assets/tegimLogo1.png";
-import toggler from "../assets/toggler.png";
 
 function Navbar() {
   const [navbarChange, setChange] = useState(false);

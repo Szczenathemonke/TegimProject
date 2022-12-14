@@ -32,10 +32,10 @@ function App() {
               <img src={tegimLogo1} className="h-[24px] mb-[28px]"></img>
             </li>
 
-            <NavbarElement name="Home" link="home" />
-            <NavbarElement name="Usługi" link="services" />
-            <NavbarElement name="oferty" link="#" />
-            <NavbarElement name="kontakt" link="contact" />
+            <NavbarElement name="Home" link="home" default="checked" />
+            <NavbarElement name="Usługi" link="services" default="unchecked" />
+            <NavbarElement name="oferty" link="#" default="unchecked" />
+            <NavbarElement name="kontakt" link="contact" default="unchecked" />
           </ul>
         </div>
       </div>

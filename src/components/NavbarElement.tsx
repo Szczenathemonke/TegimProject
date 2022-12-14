@@ -4,6 +4,7 @@ import navbarPointer from "../assets/navbar-pointer.svg";
 
 function NavbarElement(navbarProps: { name: string; link: string }) {
   const [isFocused, setFocus] = useState(false);
+
   return (
     <li tabIndex={-1} className={`flex flex-row items-center gap-2  `}>
       {isFocused ? (
