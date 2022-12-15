@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../serviceStyle.css";
 import navbarPointer from "../assets/navbar-pointer.svg";
 
 function NavbarElement(navbarProps: { name: string; link: string }) {
   const [isFocused, setFocus] = useState(false);
+  const defaultRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (navbarProps.name === "Home" && defaultRef.current != null) {
+      defaultRef.current.focus();
+    }
+  }, []);
 
   return (
     <li tabIndex={-1} className={`flex flex-row items-center gap-2  `}>
@@ -17,6 +24,7 @@ function NavbarElement(navbarProps: { name: string; link: string }) {
         className="text-base text-[#909090] hover:text-[#ffffff] focus:text-[#ffffff] uppercase tracking-widest "
         onBlur={() => setFocus(false)}
         onFocus={() => setFocus(true)}
+        ref={defaultRef}
         onClick={(e) => {
           let navElement = document.getElementById(`${navbarProps.link}`);
           e.preventDefault();

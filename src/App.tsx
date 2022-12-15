@@ -23,19 +23,16 @@ function App() {
           <ContactSection />
         </div>
         <div className="drawer-side  h-full ">
-          <label
-            htmlFor="offCanvas"
-            className="drawer-overlay checked:bg-opacity-0  "
-          ></label>
+          <label htmlFor="offCanvas" className="drawer-overlay  "></label>
           <ul className="p-5 overflow-y-auto w-2/3 bg-base-100 text-base-content flex flex-col gap-6 lg:hidden">
             <li>
               <img src={tegimLogo1} className="h-[24px] mb-[28px]"></img>
             </li>
 
-            <NavbarElement name="Home" link="home" default="checked" />
-            <NavbarElement name="Usługi" link="services" default="unchecked" />
-            <NavbarElement name="oferty" link="#" default="unchecked" />
-            <NavbarElement name="kontakt" link="contact" default="unchecked" />
+            <NavbarElement name="Home" link="home" />
+            <NavbarElement name="Usługi" link="services" />
+            <NavbarElement name="oferty" link="#" />
+            <NavbarElement name="kontakt" link="contact" />
           </ul>
         </div>
       </div>
@@ -45,17 +42,3 @@ function App() {
 }
 
 export default App;
-
-// routing i scrollsnap - navbar kieruje do odpowiedniej sekcji
-// polityka prywatnosci i regulamin - czy to ma pozostać nie ruszone czy zrobić jakiś modal który się wyświetla z polityką/regulaminem
-// czy wyłączyć przzycisk oferty (domyślam się, że tak, ale zostawione są na razie żebyś mógł zobaczyć jak to wygląda obecnie)
-
-// uwagi do layoutu
-// uwagi do typografii
-
-// czy logo na navbarze nie jest za małe
-// czy układ stopki jest odpowiedni
-// karty w sekcji Usługi - czy są poprawnie rozłożone - ustawiłem, że przy zmianie szerokości ekranu dzielą się na rzędy - myśle że to lepsze niż ich kurczenenie
-
-// navbar pointer - ma taki efekt który sprawia wrażenie mignięcia przy pierwszym wywołaniu
-// - starałem się to usunąć, ale musiałbym nad tym jeszcze posiedzieć - czy jest sens czy tak jest dobrze
