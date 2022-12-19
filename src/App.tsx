@@ -8,21 +8,22 @@ import NavbarElement from "./components/NavbarElement";
 import ServicesSection from "./components/ServicesSection";
 import tegimLogo1 from "./assets/tegimLogo1.png";
 import Navbar from "./components/Navbar";
+import NavbarBgAfterScroll from "./components/NavbarBgAfterScroll";
 
 function App() {
   return (
     <div className="App ">
-      <div className="drawer lg:justify-center lg:items-center lg:h-auto overflow-x-hidden noScroll">
+      <NavbarBgAfterScroll />
+      <div className="drawer lg:justify-center lg:items-center h-auto overflow-x-hidden noScroll">
         <input id="offCanvas" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content overflow-x-hidden noScroll ">
           <Navbar />
           <HomeHeroSection />
           <ServicesSection />
           <ContactSection />
-          <FooterSection />
         </div>
-        <div className="drawer-side  h-full">
-          <label htmlFor="offCanvas" className="drawer-overlay"></label>
+        <div className="drawer-side  h-full ">
+          <label htmlFor="offCanvas" className="drawer-overlay  "></label>
           <ul className="p-5 overflow-y-auto w-2/3 bg-base-100 text-base-content flex flex-col gap-6 lg:hidden">
             <li>
               <img src={tegimLogo1} className="h-[24px] mb-[28px]"></img>
@@ -35,22 +36,9 @@ function App() {
           </ul>
         </div>
       </div>
+      <FooterSection />
     </div>
   );
 }
 
 export default App;
-
-// routing i scrollsnap - navbar kieruje do odpowiedniej sekcji
-// polityka prywatnosci i regulamin - czy to ma pozostać nie ruszone czy zrobić jakiś modal który się wyświetla z polityką/regulaminem
-// czy wyłączyć przzycisk oferty (domyślam się, że tak, ale zostawione są na razie żebyś mógł zobaczyć jak to wygląda obecnie)
-
-// uwagi do layoutu
-// uwagi do typografii
-
-// czy logo na navbarze nie jest za małe
-// czy układ stopki jest odpowiedni
-// karty w sekcji Usługi - czy są poprawnie rozłożone - ustawiłem, że przy zmianie szerokości ekranu dzielą się na rzędy - myśle że to lepsze niż ich kurczenenie
-
-// navbar pointer - ma taki efekt który sprawia wrażenie mignięcia przy pierwszym wywołaniu
-// - starałem się to usunąć, ale musiałbym nad tym jeszcze posiedzieć - czy jest sens czy tak jest dobrze

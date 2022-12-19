@@ -4,6 +4,9 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      screens: {
+        "3xl": "1780px",
+      },
       boxShadow: {
         md: "0 0px 20px rgba(0, 0, 0, 0.6)",
       },
