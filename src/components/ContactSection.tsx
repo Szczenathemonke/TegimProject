@@ -17,7 +17,7 @@ function ContactSection() {
       <div className="Container flex max-w-[1690px] w-fit justify-center  lg:pt-[40px] px-[20px] lg:px-0">
         <div className="flex flex-row items-center justify-between mb-[120px] w-[1690px]    gap-16">
           <div className="max-w-[320px]  w-full sm:max-w-[550px] lg:max-w-[800px]">
-            <div className="flex flex-row items-center gap-4 mb-[32px]">
+            <div className="flex flex-row items-center gap-4 mb-[32px] mt-[48px]">
               <img src={bulletPoint} alt="" />
               <h2 className="font-custom2 text-3xl">Kontakt</h2>
             </div>
