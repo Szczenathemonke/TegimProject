@@ -8,7 +8,7 @@ function ServicesSection() {
       id="services"
       className="Container flex justify-start mb-[40px] lg:pt-[40px]  px-[20px]  lg:pl-[100px] scroll-mt-16"
     >
-      <div className="flex flex-col gap-8  w-screen max-w-[1490px]  md:px-[0px]">
+      <div className="flex flex-col gap-8  w-screen max-w-[1490px]  mt-[48px] md:px-[0px]">
         <div className="flex flex-row items-center gap-4 ">
           <img src={bulletpoint} alt="" />
           <h2 className="font-custom2 text-3xl">Usługi</h2>
