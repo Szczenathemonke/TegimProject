@@ -31,7 +31,7 @@ function ContactSection() {
                 Consequat, mattis at nisi, ullamcorper sit eu auctor mollis. A,
                 eget odio nunc elementum, nec
               </p>
-              <h4 className="font-custom5">+48 606 391 959</h4>{" "}
+              <h4 className="font-custom5">+48 111 222 333</h4>{" "}
             </div>
             <div>
               <div className="flex flex-row gap-2 mb-[24px]">
@@ -68,14 +68,12 @@ function ContactSection() {
                   msgContent: Yup.string().required("Pole jest Wymagane!"),
                   termsOfCondition: Yup.boolean().oneOf([true], "* Wymagane!"),
                 })}
-                onSubmit={(values) => alert(JSON.stringify(values))}
-              >
+                onSubmit={(values) => alert(JSON.stringify(values))}>
                 {(formikProps) => (
                   <>
                     <form
                       onSubmit={formikProps.handleSubmit}
-                      className="flex flex-col gap-6 "
-                    >
+                      className="flex flex-col gap-6 ">
                       <FormInputComponent
                         name="nameAndSurname"
                         type="text"
@@ -113,8 +111,7 @@ function ContactSection() {
                               formikProps.errors.termsOfCondition
                                 ? "text-warning"
                                 : ""
-                            }`}
-                          >
+                            }`}>
                             Wyrażam zgodę na przetwarzanie moich danych
                             osobowych dla potrzeb niezbędnych do realizacji
                             procesu rekrutacji zgodnie z Rozporządzeniem
@@ -139,8 +136,7 @@ function ContactSection() {
                       bg-base-100 rounded-none text-primary border-white/90
                       font-custom3 text-base lg:text-xl lg:h-[62px] lg:pt-4 lg:pb-3 
                     hover:bg-[#ffffff] hover:text-base-100 hover:border-base-100 hover:border-solid
-                      active:bg-base-100 active:text-primary active:border-[#ffffff] active:border-6  "
-                      >
+                      active:bg-base-100 active:text-primary active:border-[#ffffff] active:border-6  ">
                         {" "}
                         Wyślij
                       </button>
